@@ -4,7 +4,7 @@ using System.Runtime.ExceptionServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace testapp
+namespace TestApp
 {
     internal class Program
     {
@@ -18,10 +18,11 @@ namespace testapp
 
         private static void Main(string[] args)
         {
-            Console.WriteLine("{0} (UTC: {1})", DateTime.Now, DateTime.UtcNow);
+            Console.WriteLine("START: {1}", DateTime.UtcNow);
             Console.WriteLine("is64BitProcess: {0}", is64BitProcess);
             Console.WriteLine("dllPath: {0}", dllPath);
             TestDateTime();
+            Console.WriteLine("END: {1}", DateTime.UtcNow);
             Console.ReadLine();
         }
 

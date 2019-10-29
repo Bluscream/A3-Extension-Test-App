@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0A337CA7-9F19-471E-A38C-2A5F77A378B0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>testapp</RootNamespace>
+    <RootNamespace>TestApp</RootNamespace>
     <AssemblyName>Arma 3 Extension Tester</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

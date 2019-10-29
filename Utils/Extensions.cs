@@ -14,7 +14,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace testapp
+namespace TestApp
 {
     internal static class Extensions
     {
