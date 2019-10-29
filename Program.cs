@@ -1,9 +1,8 @@
-﻿using System;
-using System.IO;
+﻿using Maca134.Arma.Serializer;
+using System;
 using System.Runtime.ExceptionServices;
 using System.Runtime.InteropServices;
 using System.Text;
-using Maca134.Arma.Serializer;
 
 namespace testapp
 {
@@ -37,7 +36,7 @@ namespace testapp
                 Invoke(result, int.MaxValue, command_parsed);
             }
             catch (Exception ex) { Console.WriteLine("Error while invoking command: {0}", ex.Message); }
-            Console.WriteLine("Got Result from: {0}", result.ToString().ToJson(indented: true));
+            Console.WriteLine("Got Result: {0}", result.ToString().ToJson(indented: true));
         }
 
         #region Tests
@@ -56,7 +55,6 @@ namespace testapp
         #endregion Tests
 
         #region Imported Methods
-
 
 #if _WIN64
 
